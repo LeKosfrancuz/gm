@@ -17,6 +17,7 @@ import (
 	"github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/renderer"
 	"github.com/yuin/goldmark/renderer/html"
+	"github.com/FurqanSoftware/goldmark-katex"
 )
 
 // Display the usage help message
@@ -84,6 +85,7 @@ var (
 	xhtml          bool
 	chromatheme    string
 	chromalines    bool
+	mathrendering  bool
 	// The following goldmark options are missing:
 	// - Subscript / Superscript
 	// - Ins
@@ -126,6 +128,7 @@ func SetParameters() {
 	pflag.BoolVar(&definitionList, "gm-definition-list", true, "goldmark option: enables definition lists.")
 	pflag.BoolVar(&footnote, "gm-footnote", true, "goldmark option: enables footnotes.")
 	pflag.BoolVar(&linkify, "gm-linkify", true, "goldmark option: activates auto links.")
+	pflag.BoolVar(&mathrendering, "gm-katex", true, "goldmark option: activates katex math rendering.")
 	pflag.BoolVar(&strikethrough, "gm-strikethrough", true, "goldmark option: enables strike through.")
 	pflag.BoolVar(&table, "gm-table", true, "goldmark option: enables tables.")
 	pflag.BoolVar(&taskList, "gm-task-list", true, "goldmark option: enables task lists.")
@@ -275,6 +278,9 @@ func setGoldMark() {
 	}
 	if linkify {
 		extensions = append(extensions, extension.Linkify)
+	}
+	if mathrendering {
+		extensions = append(extensions, &katex.Extender{})
 	}
 	if strikethrough {
 		extensions = append(extensions, extension.Strikethrough)

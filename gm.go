@@ -8,7 +8,7 @@ import (
 )
 
 // version will be set by goreleaser based on the git tag
-var version string = "--"
+var version string = "MK"
 var goldmarkVersion string = "--"
 
 // printError acts only is error is present:

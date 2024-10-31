@@ -12,4 +12,9 @@ require (
 	github.com/yuin/goldmark-highlighting/v2 v2.0.0-20230729083705-37449abec8cc
 )
 
-require github.com/dlclark/regexp2 v1.11.4 // indirect
+require (
+	github.com/FurqanSoftware/goldmark-katex v0.0.0-20230820031700-1c400212c1e1 // indirect
+	github.com/bluele/gcache v0.0.2 // indirect
+	github.com/dlclark/regexp2 v1.11.4 // indirect
+	github.com/lithdew/quickjs v0.0.0-20200714182134-aaa42285c9d2 // indirect
+)

@@ -1,3 +1,15 @@
+
+$A \equiv B$
+
+?
+
+$d$
+
+$$
+X \Rightarrow Y \equiv \frac{Z}{2 \cdot 4}
+$$
+
+
 ---
 __Advertisement :)__
 
