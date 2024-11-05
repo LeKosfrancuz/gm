@@ -1,5 +1,7 @@
 github.com/FurqanSoftware/goldmark-katex v0.0.0-20230820031700-1c400212c1e1 h1:zm4WOvvzOeEiA47eE74RTNTi/FC5Cpw6R4fk/4hxdpc=
 github.com/FurqanSoftware/goldmark-katex v0.0.0-20230820031700-1c400212c1e1/go.mod h1:Z4lsscLMP+DMuc7k7AU0TsFRA2xQWTGhOp9zELvG1lQ=
+github.com/VojtaStruhar/goldmark-obsidian-callout v0.1.0 h1:fguM5WyRDRUtkmfdq98UavJBRnVsELbN7TP1hhN28i4=
+github.com/VojtaStruhar/goldmark-obsidian-callout v0.1.0/go.mod h1:v3poAnBt/MzAkB9NqQy8Fa8CI4/fHQI8zgFKNY1kgOY=
 github.com/alecthomas/assert/v2 v2.7.0 h1:QtqSACNS3tF7oasA8CU6A6sXZSBDqnm7RfpLl9bZqbE=
 github.com/alecthomas/chroma/v2 v2.2.0/go.mod h1:vf4zrexSH54oEjJ7EdB65tGNHmH3pGZmVkgTP5RHvAs=
 github.com/alecthomas/chroma/v2 v2.14.0 h1:R3+wzpnUArGcQz7fCETQBzO5n9IMNi13iIs46aU4V9E=
@@ -35,5 +37,7 @@ github.com/yuin/goldmark-emoji v1.0.4 h1:vCwMkPZSNefSUnOW2ZKRUjBSD5Ok3W78IXhGxxA
 github.com/yuin/goldmark-emoji v1.0.4/go.mod h1:tTkZEbwu5wkPmgTcitqddVxY9osFZiavD+r4AzQrh1U=
 github.com/yuin/goldmark-highlighting/v2 v2.0.0-20230729083705-37449abec8cc h1:+IAOyRda+RLrxa1WC7umKOZRsGq4QrFFMYApOeHzQwQ=
 github.com/yuin/goldmark-highlighting/v2 v2.0.0-20230729083705-37449abec8cc/go.mod h1:ovIvrum6DQJA4QsJSovrkC4saKHQVs7TvcaeO8AIl5I=
+gitlab.com/staticnoise/goldmark-callout v0.0.0-20240609120641-6366b799e4ab h1:gK9tS6QJw5F0SIhYJnGG2P83kuabOdmWBbSmZhJkz2A=
+gitlab.com/staticnoise/goldmark-callout v0.0.0-20240609120641-6366b799e4ab/go.mod h1:SPu13/NPe1kMrbGoJldQwqtpNhXsmIuHCfm/aaGjU0c=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=

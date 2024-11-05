@@ -8,6 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/FurqanSoftware/goldmark-katex"
+	"gitlab.com/staticnoise/goldmark-callout"
 	chroma "github.com/alecthomas/chroma/v2/formatters/html"
 	"github.com/spf13/pflag"
 	"github.com/yuin/goldmark"
@@ -17,7 +19,6 @@ import (
 	"github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/renderer"
 	"github.com/yuin/goldmark/renderer/html"
-	"github.com/FurqanSoftware/goldmark-katex"
 )
 
 // Display the usage help message
@@ -309,6 +310,8 @@ func setGoldMark() {
 	if xhtml {
 		rendererOptions = append(rendererOptions, html.WithXHTML())
 	}
+
+	extensions = append(extensions, callout.CalloutExtention)
 
 	if chromatheme != "" {
 		var chromaOptions []chroma.Option

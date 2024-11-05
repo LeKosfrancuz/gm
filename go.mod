@@ -14,7 +14,9 @@ require (
 
 require (
 	github.com/FurqanSoftware/goldmark-katex v0.0.0-20230820031700-1c400212c1e1 // indirect
+	github.com/VojtaStruhar/goldmark-obsidian-callout v0.1.0 // indirect
 	github.com/bluele/gcache v0.0.2 // indirect
 	github.com/dlclark/regexp2 v1.11.4 // indirect
 	github.com/lithdew/quickjs v0.0.0-20200714182134-aaa42285c9d2 // indirect
+	gitlab.com/staticnoise/goldmark-callout v0.0.0-20240609120641-6366b799e4ab // indirect
 )

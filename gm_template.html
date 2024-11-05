@@ -9,8 +9,142 @@
     <!-- KaTex font stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
 
+<style>
+/* ====== Callout ====== */
+:root {
+  --co-border-radius: 6px;
+  --co-left-pad: 5px;
+  --co-mg-top: 5px;
+  --co-mg-bottom: 5px;
+  --co-summary-mg-bottom: 7px;
+}
+
+details[data-callout="def"] .callout-icon,
+details[data-callout="napomena"] .callout-icon,
+details[data-callout="note"] .callout-icon {
+  display: none;
+}
+details[data-callout="def"] .callout-title-inner,
+details[data-callout="napomena"] .callout-title-inner,
+details[data-callout="note"] .callout-title-inner {
+  font-weight: revert;
+}
+details[data-callout="def"] .callout-content,
+details[data-callout="npr"] .callout-content,
+details[data-callout="napomena"] .callout-content,
+details[data-callout="note"] .callout-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+}
+
+details[data-callout="npr"] {
+  background-color: #e6f2e6;
+  border-left: solid #008000;
+  border-radius: var(--co-border-radius);
+  padding: 10px 10px 0px;
+  margin-top: var(--co-mg-top);
+  margin-bottom: var(--co-mg-bottom);
+}
+details[data-callout="npr"] summary {
+  color: #008000;
+  background: #cce6cc;
+  border-radius: var(--co-border-radius);
+  padding-left: var(--co-left-pad);
+  margin-bottom: var(--co-summary-mg-bottom);
+  font-weight: bold;
+}
+
+details[data-callout="def"] {
+  background-color: #ebebf7;
+  border-left: solid #3333b3;
+  border-radius: var(--co-border-radius);
+  padding: 10px 10px 0px;
+  margin-top: var(--co-mg-top);
+  margin-bottom: var(--co-mg-bottom);
+}
+details[data-callout="def"] summary {
+  color: #3333b3;
+  background: #d6d6f0;
+  border-radius: var(--co-border-radius);
+  padding-left: var(--co-left-pad);
+  margin-bottom: var(--co-summary-mg-bottom);
+  font-weight: bold;
+}
+
+details[data-callout="napomena"] {
+  font-family: Arial;
+  background-color: rgb(0, 0, 0, 0);
+  border-left: solid #ff0000;
+  border-radius: var(--co-border-radius);
+  padding: 10px 10px 0px;
+  margin-top: var(--co-mg-top);
+  margin-bottom: var(--co-mg-bottom);
+}
+details[data-callout="napomena"] summary {
+  color: #cf0000;
+  background: #ffdcdc;
+  border-radius: var(--co-border-radius);
+  padding-left: var(--co-left-pad);
+  margin-bottom: var(--co-summary-mg-bottom);
+  font-weight: bold;
+  list-style-type: '🚩';
+}
+
+details[data-callout="napomena"] .callout-content {
+  font-style: italic;
+}
+
+
+details[data-callout="note"] {
+  color: #3463d8;
+  font-family: Segoe UI;
+  background-color: rgb(0, 0, 0, 0);
+  border-left: solid #3463d8;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+details[data-callout="note"] summary {
+  list-style-type: '( ℹ️ ) Note';
+}
+
+/*
+author: sailKite, elevict
+source: https://discord.com/channels/686053708261228577/702656734631821413/1164269429543149598
+*/
+
+details[data-callout="teorem"] {
+  --callout-color: var(--text-normal);
+  font-family: Times;
+  background-color: rgb(0, 0, 0, 0);
+  border: solid;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+details[data-callout="teorem"] .callout-icon {
+  display: none;
+}
+details[data-callout="teorem"] .callout-title-inner {
+  font-weight: revert;
+}
+details[data-callout="teorem"] .callout-content {
+  font-style: italic;
+}
+
+details {
+  overflow: auto;
+}
+
+summary {
+  overflow: auto;
+  padding: 0.5rem;
+}
+</style>
+
     {{- range .css }}
     {{- with .Url }}
+    <!-- <link rel="stylesheet" type="text/css" href="./callouts-theme.css"> -->
     <link rel="stylesheet" type="text/css" href="{{.}}">
     {{- end }}
     {{- with .Code }}

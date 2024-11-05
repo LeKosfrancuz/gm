@@ -9,6 +9,26 @@ $$
 X \Rightarrow Y \equiv \frac{Z}{2 \cdot 4}
 $$
 
+> [!napomena] TEKST NAPOMENE
+> Ovo je napomena
+>
+> Ne znam što da ovdje napišem.
+
+
+> [!note]
+>
+> TEST
+
+> [!def] Mateo Kos
+> Hello Wordl
+
+> [!npr] Primjer 1.6
+> Ovo je test primjer 1.6
+
+
+> [!teorem] **Theorem 1.4.49** (Dominated convergence theorem).
+> Let $(X,B,\mu)$ be a measure space, and let $f_1, f_2, \dots: X \rightarrow C$ be a sequence of measurable functions that converge pointwise $\mu$-almost everywhere to a measurable limit $f:X \rightarrow C$. Suppose that there is an unsigned absolutely integrable function $G:X \rightarrow [0,+\infty]$ such that $|f_n|$ are pointwise $\mu$-almost everywhere bounded by $G$ for each $n$. Then we have
+> $$\lim_{n \rightarrow \infty}\int_{X}f_nd\mu = \int_{X}f~d\mu$$
 
 ---
 __Advertisement :)__
